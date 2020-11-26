@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/leshke/social-network/static/css/main.4d9542da.chunk.css",
-    "main.js": "/leshke/social-network/static/js/main.91bcb2e3.chunk.js",
-    "main.js.map": "/leshke/social-network/static/js/main.91bcb2e3.chunk.js.map",
-    "runtime-main.js": "/leshke/social-network/static/js/runtime-main.1214cab4.js",
-    "runtime-main.js.map": "/leshke/social-network/static/js/runtime-main.1214cab4.js.map",
-    "static/js/2.a48dccfc.chunk.js": "/leshke/social-network/static/js/2.a48dccfc.chunk.js",
-    "static/js/2.a48dccfc.chunk.js.map": "/leshke/social-network/static/js/2.a48dccfc.chunk.js.map",
-    "index.html": "/leshke/social-network/index.html",
-    "precache-manifest.4c453798e5886f410b80468486654aa5.js": "/leshke/social-network/precache-manifest.4c453798e5886f410b80468486654aa5.js",
-    "service-worker.js": "/leshke/social-network/service-worker.js",
-    "static/css/main.4d9542da.chunk.css.map": "/leshke/social-network/static/css/main.4d9542da.chunk.css.map",
-    "static/js/2.a48dccfc.chunk.js.LICENSE.txt": "/leshke/social-network/static/js/2.a48dccfc.chunk.js.LICENSE.txt",
-    "static/media/avatar.png": "/leshke/social-network/static/media/avatar.bbc9d3ef.png"
+    "main.css": "/social-network/static/css/main.4d9542da.chunk.css",
+    "main.js": "/social-network/static/js/main.a0d1cbb9.chunk.js",
+    "main.js.map": "/social-network/static/js/main.a0d1cbb9.chunk.js.map",
+    "runtime-main.js": "/social-network/static/js/runtime-main.bf681233.js",
+    "runtime-main.js.map": "/social-network/static/js/runtime-main.bf681233.js.map",
+    "static/js/2.a48dccfc.chunk.js": "/social-network/static/js/2.a48dccfc.chunk.js",
+    "static/js/2.a48dccfc.chunk.js.map": "/social-network/static/js/2.a48dccfc.chunk.js.map",
+    "index.html": "/social-network/index.html",
+    "precache-manifest.8cd600b51dfe8bdd800da5a0641ff8ae.js": "/social-network/precache-manifest.8cd600b51dfe8bdd800da5a0641ff8ae.js",
+    "service-worker.js": "/social-network/service-worker.js",
+    "static/css/main.4d9542da.chunk.css.map": "/social-network/static/css/main.4d9542da.chunk.css.map",
+    "static/js/2.a48dccfc.chunk.js.LICENSE.txt": "/social-network/static/js/2.a48dccfc.chunk.js.LICENSE.txt",
+    "static/media/avatar.png": "/social-network/static/media/avatar.bbc9d3ef.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1214cab4.js",
+    "static/js/runtime-main.bf681233.js",
     "static/js/2.a48dccfc.chunk.js",
     "static/css/main.4d9542da.chunk.css",
-    "static/js/main.91bcb2e3.chunk.js"
+    "static/js/main.a0d1cbb9.chunk.js"
   ]
 }
