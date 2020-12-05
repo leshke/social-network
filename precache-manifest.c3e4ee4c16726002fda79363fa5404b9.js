@@ -1,14 +1,14 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "550f88aef75aa4c13896086abc5bb125",
+    "revision": "23ef8e1d031d20d30c6c595fe349eed3",
     "url": "/social-network/index.html"
   },
   {
-    "revision": "e7a14d739363eaa58a36",
+    "revision": "29c77c29a74e430d2fda",
     "url": "/social-network/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "87923bb3284186d145c0",
+    "revision": "be8681481d927eee1251",
     "url": "/social-network/static/css/3.1dc824a2.chunk.css"
   },
   {
@@ -16,32 +16,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/social-network/static/css/4.db1f9ec4.chunk.css"
   },
   {
-    "revision": "2770219d0bdc9b89b24d",
+    "revision": "ad2c2fe4ab1706f29243",
     "url": "/social-network/static/css/main.fce33422.chunk.css"
   },
   {
-    "revision": "e7a14d739363eaa58a36",
-    "url": "/social-network/static/js/2.6f592aa2.chunk.js"
+    "revision": "29c77c29a74e430d2fda",
+    "url": "/social-network/static/js/2.daddedeb.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/social-network/static/js/2.6f592aa2.chunk.js.LICENSE.txt"
+    "url": "/social-network/static/js/2.daddedeb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "87923bb3284186d145c0",
-    "url": "/social-network/static/js/3.f04ca3f0.chunk.js"
+    "revision": "be8681481d927eee1251",
+    "url": "/social-network/static/js/3.3aa26104.chunk.js"
   },
   {
     "revision": "9ebfacfce18a4dfbdea0",
     "url": "/social-network/static/js/4.3ac51dbe.chunk.js"
   },
   {
-    "revision": "2770219d0bdc9b89b24d",
-    "url": "/social-network/static/js/main.ecbc15e1.chunk.js"
+    "revision": "ad2c2fe4ab1706f29243",
+    "url": "/social-network/static/js/main.a72c367c.chunk.js"
   },
   {
-    "revision": "f4f60c402d6ff70f5b6f",
-    "url": "/social-network/static/js/runtime-main.aa7e9300.js"
+    "revision": "ebd5ef6ae31081d11c59",
+    "url": "/social-network/static/js/runtime-main.b49996f9.js"
   },
   {
     "revision": "0841af952c807bdf56455b1addb4c7df",
