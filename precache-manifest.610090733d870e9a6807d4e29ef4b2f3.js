@@ -1,47 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e9b19f4148102f4a1c42661a4b945919",
+    "revision": "c0df9cca564ce488da7ddd9f352a4c59",
     "url": "/social-network/index.html"
   },
   {
-    "revision": "95ec17167c7a64d7e6f6",
+    "revision": "b576037eb7854944878d",
     "url": "/social-network/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "31e7c8975a2f5e659058",
+    "revision": "e24a1d8009cc69a5738e",
     "url": "/social-network/static/css/3.ad5e289f.chunk.css"
   },
   {
-    "revision": "86e66ca85480106df98d",
-    "url": "/social-network/static/css/4.523f12ae.chunk.css"
+    "revision": "f13354c5688a7b94b811",
+    "url": "/social-network/static/css/main.345b5957.chunk.css"
   },
   {
-    "revision": "a5a058e87fb06a8dfcbf",
-    "url": "/social-network/static/css/main.9975f19c.chunk.css"
-  },
-  {
-    "revision": "95ec17167c7a64d7e6f6",
-    "url": "/social-network/static/js/2.82c71a1d.chunk.js"
+    "revision": "b576037eb7854944878d",
+    "url": "/social-network/static/js/2.21e26573.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/social-network/static/js/2.82c71a1d.chunk.js.LICENSE.txt"
+    "url": "/social-network/static/js/2.21e26573.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "31e7c8975a2f5e659058",
-    "url": "/social-network/static/js/3.18720f76.chunk.js"
+    "revision": "e24a1d8009cc69a5738e",
+    "url": "/social-network/static/js/3.765dc05d.chunk.js"
   },
   {
-    "revision": "86e66ca85480106df98d",
-    "url": "/social-network/static/js/4.e906111a.chunk.js"
+    "revision": "f13354c5688a7b94b811",
+    "url": "/social-network/static/js/main.8f0ce578.chunk.js"
   },
   {
-    "revision": "a5a058e87fb06a8dfcbf",
-    "url": "/social-network/static/js/main.5da02768.chunk.js"
-  },
-  {
-    "revision": "2a6615a0ce43af9e524a",
-    "url": "/social-network/static/js/runtime-main.4bada052.js"
+    "revision": "c218afd45fff5abfde34",
+    "url": "/social-network/static/js/runtime-main.96e654ca.js"
   },
   {
     "revision": "0841af952c807bdf56455b1addb4c7df",
