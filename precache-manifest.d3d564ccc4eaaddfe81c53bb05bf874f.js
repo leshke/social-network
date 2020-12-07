@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c5e641d8a6c7bbc844b235bf213d5058",
+    "revision": "b4e7feb5b21aeff84fa2d23c71c5ec07",
     "url": "/social-network/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/social-network/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "289fa7547f4440355246",
-    "url": "/social-network/static/css/3.1dc824a2.chunk.css"
+    "revision": "31e7c8975a2f5e659058",
+    "url": "/social-network/static/css/3.ad5e289f.chunk.css"
   },
   {
-    "revision": "cfece992cf9ade085729",
-    "url": "/social-network/static/css/4.bfd37edc.chunk.css"
+    "revision": "305badf705d0d3bacede",
+    "url": "/social-network/static/css/4.523f12ae.chunk.css"
   },
   {
-    "revision": "012ed75a408e1891ff1f",
-    "url": "/social-network/static/css/main.76da99d7.chunk.css"
+    "revision": "a5a058e87fb06a8dfcbf",
+    "url": "/social-network/static/css/main.9975f19c.chunk.css"
   },
   {
     "revision": "95ec17167c7a64d7e6f6",
@@ -28,20 +28,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/social-network/static/js/2.82c71a1d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "289fa7547f4440355246",
+    "revision": "31e7c8975a2f5e659058",
     "url": "/social-network/static/js/3.18720f76.chunk.js"
   },
   {
-    "revision": "cfece992cf9ade085729",
+    "revision": "305badf705d0d3bacede",
     "url": "/social-network/static/js/4.2798040e.chunk.js"
   },
   {
-    "revision": "012ed75a408e1891ff1f",
-    "url": "/social-network/static/js/main.8e2777f2.chunk.js"
+    "revision": "a5a058e87fb06a8dfcbf",
+    "url": "/social-network/static/js/main.5da02768.chunk.js"
   },
   {
-    "revision": "d6a829867a7c46a783eb",
-    "url": "/social-network/static/js/runtime-main.1c4c72b5.js"
+    "revision": "4b6f3f2c852e80d716cb",
+    "url": "/social-network/static/js/runtime-main.9f8f3779.js"
   },
   {
     "revision": "0841af952c807bdf56455b1addb4c7df",
@@ -68,7 +68,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/social-network/static/media/Poppins-Thin.25cd0f68.ttf"
   },
   {
-    "revision": "49a691664926c1528c60d04b34a9ffa8",
-    "url": "/social-network/static/media/banner.49a69166.jpg"
+    "revision": "1db7ce502bcfbaeb75f85524ead53a12",
+    "url": "/social-network/static/media/banner.1db7ce50.jpg"
   }
 ]);
