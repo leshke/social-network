@@ -1,39 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7d63f57b868b58adfc0580a20b717ddd",
+    "revision": "607271fa42bd0a6adb31acbb84536f09",
     "url": "/social-network/index.html"
   },
   {
-    "revision": "b45e0d15bc5372ec7b0f",
+    "revision": "86497a2c2f20887495d9",
     "url": "/social-network/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "51753342d7c6c79ea90e",
+    "revision": "5c8d2414e55da4c461d9",
     "url": "/social-network/static/css/3.ad5e289f.chunk.css"
   },
   {
-    "revision": "33d1ea436c639d243216",
+    "revision": "55274bb6b8d03c760fe8",
     "url": "/social-network/static/css/main.02f8002c.chunk.css"
   },
   {
-    "revision": "b45e0d15bc5372ec7b0f",
-    "url": "/social-network/static/js/2.f1c0cbb4.chunk.js"
+    "revision": "86497a2c2f20887495d9",
+    "url": "/social-network/static/js/2.283e8dc3.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/social-network/static/js/2.f1c0cbb4.chunk.js.LICENSE.txt"
+    "url": "/social-network/static/js/2.283e8dc3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "51753342d7c6c79ea90e",
-    "url": "/social-network/static/js/3.ccdc26cf.chunk.js"
+    "revision": "5c8d2414e55da4c461d9",
+    "url": "/social-network/static/js/3.60809c4d.chunk.js"
   },
   {
-    "revision": "33d1ea436c639d243216",
-    "url": "/social-network/static/js/main.16a7ee47.chunk.js"
+    "revision": "55274bb6b8d03c760fe8",
+    "url": "/social-network/static/js/main.a3ca1a95.chunk.js"
   },
   {
-    "revision": "2e77eccd45b8ac45ac7f",
-    "url": "/social-network/static/js/runtime-main.0b6eb226.js"
+    "revision": "391827ad26b542cd4b67",
+    "url": "/social-network/static/js/runtime-main.0d878a1d.js"
   },
   {
     "revision": "0841af952c807bdf56455b1addb4c7df",
@@ -62,9 +62,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1db7ce502bcfbaeb75f85524ead53a12",
     "url": "/social-network/static/media/banner.1db7ce50.jpg"
-  },
-  {
-    "revision": "8e52b8c811bb9df6598e60079e825f6d",
-    "url": "/social-network/static/media/noPhoto.8e52b8c8.png"
   }
 ]);
