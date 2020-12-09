@@ -1,0 +1,14 @@
+.dialogs{
+    display: flex;
+    flex-direction: column;
+    background-color: #19223d;
+}
+
+.dialogs a {
+    padding: .35rem;
+    color: #ffff;
+}
+
+.dialogs .selected {
+    background-color: #fc5d39c9;
+}

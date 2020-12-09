@@ -1,0 +1,13 @@
+.profileWrapper {
+  padding: .75rem;
+}
+
+.profileImg img {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+.newPost {
+  display: flex;
+}

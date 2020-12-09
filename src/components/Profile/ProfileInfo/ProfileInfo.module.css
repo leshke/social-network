@@ -1,0 +1,211 @@
+/*===========BANNER=========*/
+
+.bannerWrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.banner {
+  display: block;
+  max-height: 300px;
+  width: 100%;
+}
+
+/*===========AVATAR=========*/
+
+.photoStatusWrapper {
+  display: flex;
+  background-color: #19223d;
+}
+
+.avatarWrapper {
+  margin-top: -6rem;
+  margin-left: 1.5rem;
+  z-index: 99;
+}
+
+.avatar {
+  position: relative;
+  border-radius: 50%;
+  border: 0.75rem solid #19223d;
+  width: 9rem;
+  background: #19223d;
+}
+
+.avatar img {
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+/*========CHANGE PHOTO BTN===========*/
+
+.changePhoto input {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: block;
+}
+
+.customFileUpload input[type="file"] {
+  display: none;
+}
+
+.customFileUpload {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  cursor: pointer;
+}
+
+/*===========STATUS=========*/
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #19223d;
+  width: 100%;
+  padding: 1rem;
+}
+
+.headerContainer {
+  display: flex;
+  margin-bottom: 0.75rem;
+}
+
+.headerContainer h4 {
+  margin-right: 5px;
+}
+
+.wrapper span {
+  padding: 5px;
+  border: 1px solid transparent;
+}
+
+.headerContainer button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  width: 30px;
+}
+
+.wrapper p, .wrapper input {
+  font-family: 'PoppinsBold', sans-serif;
+  font-size: 1.2rem;
+  color: #ffff;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 20rem;
+  padding: 0.33rem 0.2rem;
+}
+
+/*===========CONTACT=========*/
+
+.ProfileInfoWrapper {
+  background-color: #1e2745;
+  margin: 1.75rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.item h4 {
+  width: 17%;
+}
+
+.item p {
+  width: 80%;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  padding: 0.33rem;
+}
+
+.contactItem a {
+  color: #ffff;
+  font-family: 'IndieFlower', sans-serif;
+  margin-left: 0.75rem;
+}
+
+.editBtn {
+  display: flex;
+  float: right;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 1rem;
+}
+
+.editBtn [data-tooltip]::after {
+  width: 50px;
+  left: -60px;
+}
+
+.editBtn [data-tooltip]:hover::after {
+  left: -70px;
+}
+
+/*===========CONTACT EDIT MODE=========*/
+
+.formWrapper {
+  display: flex;
+}
+
+.mainInfoWrapper, .contactInfoWrapper {
+  width: 50%;
+}
+
+.contactItem div {
+  display: flex;
+  align-items: center;
+}
+
+.contactsItem>div>label {
+  width: 25%;
+  margin: .3rem;
+  text-transform: capitalize;
+}
+
+.ProfileInfoWrapper h3 {
+  margin-top: 1rem;
+}
+
+.errors {
+  font-family: 'PoppinsLightItalic';
+  display: inline-block;
+  padding: .5rem;
+  color: #eb3434;
+}
+
+/*===========POSTS=========*/
+
+.newPost {
+  display: flex;
+}
+
+@media (max-width:1024px) {
+  .formWrapper {
+    flex-direction: column;
+  }
+  .mainInfoWrapper, .contactInfoWrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width:768px) {
+  .wrapper {
+    width: 50%;
+  }
+}

@@ -1,0 +1,60 @@
+.post {
+  display: inline-block;
+  padding: 1.25rem 1.75rem;
+  width: 50%;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  background-color: #19223d;
+}
+
+.headerPost {
+  color: #ffff;
+  font-family: 'PoppinsMedium';
+  display: flex;
+  align-items: center;
+  padding-bottom: .75rem;
+}
+
+.avatar {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: .35rem;
+}
+
+.postImage {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  padding: 0.75rem 0;
+  cursor: pointer;
+}
+
+.liked, .notLiked {
+  font-family: 'PoppinsMedium', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.notLiked {
+  color: #afaeae;
+}
+
+.liked {
+  color: #fd5e3a;
+}
+
+@media (max-width:768px) {
+  .post {
+    width: 75%;
+  }
+}
+
+@media (max-width:480px) {
+  .post {
+    width: calc(100% - 3.5rem);
+  }
+}

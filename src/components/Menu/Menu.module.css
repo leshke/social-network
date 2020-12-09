@@ -1,0 +1,27 @@
+.menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 3rem;
+  width: 3rem;
+  color: #ccc;
+}
+
+.menu {
+  background-color: #8c91b6;
+  grid-area: menu;
+  z-index: 5;
+  position: fixed;
+  top: 3rem;
+  height: 100%;
+}
+
+.selected {
+  padding: 0;
+  box-shadow: 0 0 2rem 0 rgba(10, 10, 10, .3);
+}
+
+.selected span {
+  color: #222;
+}

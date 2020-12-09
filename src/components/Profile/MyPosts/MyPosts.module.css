@@ -1,0 +1,57 @@
+.profileWrapper {
+  margin: 1.75rem;
+  padding: 2rem;
+  background-color: #1e2745;
+  border-radius: 1rem;
+}
+
+.profileImg img {
+  display: block;
+  width: 100%;
+  height: 15rem;
+}
+
+.newPost {
+  display: flex;
+}
+
+.formContainer {
+  padding: 1.75rem;
+}
+
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profileWrapper .formContainer textarea {
+  width: 100%;
+  min-height: 3.5rem;
+}
+
+.profileWrapper .formContainer input {
+  width: 25%;
+}
+
+.addPost {
+  color: #ffff;
+  border: 1px solid#6e9aca;
+  border-radius: 3px;
+  width: 69px;
+  height: 25px;
+  cursor: pointer;
+  background-color: #6c9aca;
+}
+
+.addPost:disabled {
+  border: 1px solid#cccccc;
+  color: #adadad;
+  background-color: rgb(219, 219, 219);
+}
+
+@media (max-width:480px) {
+  .formContainer form textarea {
+    width: 100%;
+  }
+}

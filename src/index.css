@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'PoppinsBold';
+  src: local('PoppinsBold'), url(./fonts/Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsLight';
+  src: local('PoppinsLight'), url(./fonts/Poppins-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsMedium';
+  src: local('PoppinsMedium'), url(./fonts/Poppins-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsThin';
+  src: local('PoppinsThin'), url(./fonts/Poppins-Thin.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsLightItalic';
+  src: local('PoppinsLightItalic'), url(./fonts/Poppins-LightItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'IndieFlower';
+  src: local('IndieFlower'), url(./fonts/IndieFlower-Regular.ttf) format('truetype');
+}
+
+html {
+  font-family: 'PoppinsLight', sans-serif;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+@media (max-width:992px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width:768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:480px) {
+  html {
+    font-size: 10px;
+  }
+}

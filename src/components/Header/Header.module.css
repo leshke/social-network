@@ -1,0 +1,39 @@
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131b33;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.authInfo a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.authInfo img {
+  display: block;
+  max-width: 100%;
+  height: 3rem;
+}
+
+.authInfo span{
+  color: #fff;
+  padding-left: 5px;
+}
+
+.logout, .login{
+  display: block;
+  background-color: #fd5e3a;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}

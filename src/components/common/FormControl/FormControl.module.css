@@ -1,0 +1,53 @@
+.formControl {
+    display: flex;
+    flex-direction: column;
+}
+
+.formControl span{
+    font-family: 'PoppinsLightItalic';
+    display: inline-block;
+    padding: .5rem;
+    color: #eb3434;
+}
+
+.formControl input[type="checkbox"] {
+    height: 15px;
+}
+
+.formControl input, .formControl textarea {
+    min-height: 2rem;
+    background: transparent;
+    border: 1px solid #8c91b6;
+    color: #8c91b6;
+    border-radius: .2rem;
+    padding: 0 5px;
+    margin: 5px 0;
+}
+
+.formControl textarea {
+    max-width: 25rem;
+}
+.formControl input{
+    max-width: 17rem;
+}
+
+.formControl input:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+.mainItem{
+    width: 100%;
+}
+
+.mainItem label{
+    font-family: 'PoppinsMedium', sans-serif;
+    color: #8c91b6;
+    display: block;
+    margin: 1rem 0;
+    text-transform: capitalize;
+}
+
+.mainItem textarea{
+    height: 8rem;
+}
