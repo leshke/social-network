@@ -51,7 +51,7 @@ export const getAuth = () => {
                     let data = response.data.data;
                     dispatch(setAuthUser(data.id, data.email, data.login, true))
                 }
-                else{
+                else {
                     //error
                 }
             })

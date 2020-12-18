@@ -5,6 +5,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import GroupIcon from '@material-ui/icons/Group';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
+import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 
 const Menu = () => {
   return (
@@ -27,6 +28,11 @@ const Menu = () => {
       <NavLink to="/message" activeClassName={s.selected}>
         <span data-tooltip="Messages">
           <MailOutlineIcon />
+        </span>
+      </NavLink>
+      <NavLink to="/about" activeClassName={s.selected}>
+        <span data-tooltip="About App">
+          <InfoOutlinedIcon />
         </span>
       </NavLink>
     </aside>

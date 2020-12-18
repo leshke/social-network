@@ -30,7 +30,7 @@ const ProfileContactForm = ({ userProfile, toggleEditMode, saveProfileInfo, inpu
                         {CreateField('Enter your full name', 'fullName', null, Input, userProfile.fullName)}
                         {CreateField('Write about yourself', 'aboutMe', null, Textarea, userProfile.aboutMe)}
                         {CreateField('Do you looking for a job?', 'lookingForAJob', null, Input, userProfile.lookingForAJob, null, "checkbox")}
-                        {CreateField('Job description', 'lookingForAJobDescription', null, Input, userProfile.lookingForAJobDescription)}
+                        {CreateField('Job description', 'lookingForAJobDescription', null, Textarea, userProfile.lookingForAJobDescription)}
                     </div>
                     <div className={s.contactInfoWrapper}>
                         <h3>Contacts:</h3>

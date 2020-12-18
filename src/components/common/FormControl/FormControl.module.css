@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-.formControl span{
+.formControl span {
     font-family: 'PoppinsLightItalic';
     display: inline-block;
     padding: .5rem;
@@ -27,7 +27,8 @@
 .formControl textarea {
     max-width: 25rem;
 }
-.formControl input{
+
+.formControl input {
     max-width: 17rem;
 }
 
@@ -36,11 +37,11 @@
     border-color: #fff;
 }
 
-.mainItem{
+.mainItem {
     width: 100%;
 }
 
-.mainItem label{
+.mainItem label {
     font-family: 'PoppinsMedium', sans-serif;
     color: #8c91b6;
     display: block;
@@ -48,6 +49,18 @@
     text-transform: capitalize;
 }
 
-.mainItem textarea{
+.mainItem textarea {
     height: 8rem;
+}
+
+@media (max-width:1024px) {
+    .formControl textarea {
+        max-width: 75%;
+    }
+}
+
+@media (max-width:768px) {
+    .formControl textarea {
+        max-width: 100%;
+    }
 }

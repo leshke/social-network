@@ -11,8 +11,8 @@ let initialState = {
     messages: [
         { name: "Hey" },
         { name: "How are you?" },
-        { name: "blabla" },
-        { name: "abrakadabra" }
+        { name: "...?" },
+        { name: "Oh I forget, this is fake messaging" }
     ],
 }
 

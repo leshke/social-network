@@ -6,17 +6,21 @@ import { unfollow, setCurrentPage } from '../../redux/reducer-users';
 import { getFriends } from '../../redux/reducer-friends';
 import Friends from './Friends';
 
-const MyFriendsContainer = React.memo((props) => {
+const MyFriendsContainer = React.memo(({ currentPage, pageSize, getFriends, ...props }) => {
+
     useEffect(() => {
-        props.getFriends(props.currentPage, props.pageSize)
-    }, [])
+        getFriends(currentPage, pageSize)
+    }, [getFriends, pageSize, currentPage])
 
     const onPageChange = (page) => {
-        props.getFriends(page, props.pageSize)
+        getFriends(page, pageSize)
         props.setCurrentPage(page)
     }
 
-    return <Friends onPageChange={onPageChange} {...props} />
+    return <Friends onPageChange={onPageChange}
+        currentPage={currentPage}
+        pageSize={pageSize}
+        {...props} />
 })
 
 const mapStateToProps = (state) => {

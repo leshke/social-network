@@ -208,4 +208,13 @@
   .wrapper {
     width: 50%;
   }
+  .item {
+    flex-direction: column;
+  }
+  .item h4 {
+    width: 100%;
+  }
+  .item p {
+    width: 100%;
+  }
 }

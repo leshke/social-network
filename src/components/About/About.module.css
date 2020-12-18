@@ -1,0 +1,40 @@
+.wrapper {
+    margin: 1.75rem;
+    padding: 1.75rem;
+    background-color: #19223d;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.item h5 {
+    min-width: 6rem;
+    color: #fff;
+    margin: 0 1rem;
+}
+
+.item li {
+    color: #8c91b6;
+    margin-bottom: 0.5rem;
+}
+
+.item b {
+    color: #fd5e3a;
+}
+
+.item ul {
+    list-style-type: disc;
+}
+
+.item mark {
+    display: inline-block;
+    padding: .25rem;
+    background-color: #66bfff;
+    ;
+}

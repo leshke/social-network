@@ -1,39 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './Users.module.css';
 import Pagination from "react-js-pagination";
 
-class PaginationContainer extends React.PureComponent {
-    constructor(props) {
-        super(props);
-        this.state = {
-            activePage: this.props.currentPage
-        };
+const PaginationContainer = (props) => {
+
+    const [activePage, setActivePage] = useState(props.currentPage)
+
+    const handlePageChange = (pageNumber) => {
+        props.onPageChange(pageNumber)
+        setActivePage(pageNumber);
     }
 
-    handlePageChange(pageNumber) {
-        this.props.onPageChange(pageNumber)
-        this.setState({ activePage: pageNumber });
-    }
+    const pagesCount = Math.ceil(props.totalUsers ? props.totalUsers : props.totalFriends / props.pageSize);
 
-    render() {
-        const pagesCount = Math.ceil(this.props.totalUsers ? this.props.totalUsers : this.props.totalFriends / this.props.pageSize);
-
-        return (
-            <div className={s.paginationContainer}>
-                <Pagination
-                    hideNavigation
-                    activePage={this.state.activePage}
-                    itemsCountPerPage={this.props.pageSize}
-                    totalItemsCount={pagesCount}
-                    pageRangeDisplayed={10}
-                    onChange={this.handlePageChange.bind(this)}
-                />
-            </div>
-        );
-    }
+    return (
+        <div className={s.paginationContainer}>
+            <Pagination
+                hideNavigation
+                activePage={activePage}
+                itemsCountPerPage={props.pageSize}
+                totalItemsCount={pagesCount}
+                pageRangeDisplayed={10}
+                onChange={handlePageChange}
+            />
+        </div>
+    );
 }
 
-// pagination without library
+// My pagination without library
 /* const Pagination1 = React.memo((props, { portionSize = 10 }) => {
     let pagesCount = Math.ceil(props.totalUsers / props.pageSize);
     let pages = [];

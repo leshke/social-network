@@ -30,7 +30,7 @@ const ProfileStatus = React.memo((props) => {
         {
             !editMode ?
                 <p >{props.status || 'no status :('}</p> :
-                <input onChange={onChangeStatus} autoFocus={true} value={status || ''}></input>
+                <input onChange={onChangeStatus} maxLength="45" autoFocus={true} value={status || ''}></input>
         }
         <div className={s.headerContainer}>
             {!props.isOwner && !editMode ?

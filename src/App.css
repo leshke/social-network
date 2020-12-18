@@ -191,7 +191,7 @@ div>.__react_modal_image__modal_container {
   touch-action: none;
   overflow: hidden;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   flex-direction: column-reverse;
 }
 

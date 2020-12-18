@@ -91,13 +91,13 @@
     color: #8c91b6;
 }
 
-.loginForm label{
+.loginForm label {
     display: block;
     font-family: 'PoppinsMedium';
     margin: .5rem 0;
 }
 
-.loginForm input:last-child{
+.loginForm input:last-child {
     margin: 0!important;
 }
 
@@ -122,6 +122,11 @@
     margin-top: 1rem;
     padding: .5rem;
     color: #eb3434;
+}
+
+.loginForm em {
+    color: turquoise;
+    font-family: 'PoppinsMedium';
 }
 
 @media (max-width:992px) {

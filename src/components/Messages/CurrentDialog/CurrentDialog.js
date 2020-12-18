@@ -1,6 +1,7 @@
 import React from 'react'
 import { Field, Form } from 'react-final-form';
 import s from './CurrentDialog.module.css'
+import avatar from '../../../assets/img/avatar.png'
 
 const AddNewMessageForm = (props) => {
     
@@ -26,7 +27,7 @@ const CurrentDialog = (props) => {
 
     const messagesElements = props.messageState.messages
         .map((message, i) => <div className={s.message} key={i}>
-            <img src={props.avatarImg} alt='' />
+            <img src={props.avatarImg || avatar} alt='ava' />
             <span>{message.name}</span>
         </div>)
 

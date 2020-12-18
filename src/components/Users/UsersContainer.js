@@ -1,34 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { setCurrentPage, follow, unfollow, getUsers } from '../../redux/reducer-users';
 import Users from './Users';
 import { compose } from 'redux';
+import { withAuthRedirect } from '../../hoc/withRedirect';
 
-class UsersAPIContainer extends React.Component {
+const UsersAPIContainer = ({ getUsers, currentPage, pageSize, ...props }) => {
 
-    componentDidMount() {
-        this.props.getUsers(this.props.currentPage, this.props.pageSize)
+    useEffect(() => {
+        getUsers(currentPage, pageSize)
+    }, [getUsers, currentPage, pageSize])
+
+    const onPageChange = (page) => {
+        getUsers(page, pageSize)
+        props.setCurrentPage(page)
     }
 
-    onPageChange = (page) => {
-        this.props.getUsers(page, this.props.pageSize)
-        this.props.setCurrentPage(page)
-    }
-
-    render() {
-        return <>
-            <Users usersState={this.props.usersState}
-                isFetching={this.props.isFetching}
-                totalUsers={this.props.totalUsers}
-                pageSize={this.props.pageSize}
-                currentPage={this.props.currentPage}
-                onPageChange={this.onPageChange}
-                follow={this.props.follow}
-                unfollow={this.props.unfollow}
-                followingProgress={this.props.followingProgress}
-            />
-        </>
-    }
+    return <Users
+        pageSize={pageSize}
+        currentPage={currentPage}
+        onPageChange={onPageChange}
+        {...props}
+    />
 }
 
 const MapStateToProps = (state) => {
@@ -48,4 +41,5 @@ export default compose(connect(MapStateToProps, {
     unfollow,
     getUsers
 }),
+    withAuthRedirect
 )(UsersAPIContainer)
