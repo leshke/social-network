@@ -46,7 +46,7 @@ const About = () => {
         <h4>In process</h4>
         <ul className={s.list}>
             <li className={s.item}>
-                <p>Function search user by name, messaging, ui for modal Post.</p>
+                <p>Messaging fetching from server, UI for modal window of MyPosts.</p>
             </li>
         </ul>
     </div>

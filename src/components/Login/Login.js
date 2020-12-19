@@ -17,7 +17,7 @@ const Login = ({ login, isAuth, captcha, error }) => {
     if (isAuth) {
         return <Redirect to="profile" />
     }
-    
+
     return <div className={s.insideContainer}>
         <Circles />
         <div className={s.loginForm}>

@@ -14,7 +14,7 @@ let initialState = {
     currentPage: 1,
     totalUsers: null,
     isFetching: false,
-    followingProgress: []
+    followingProgress: [],
 }
 
 //reducer
@@ -88,6 +88,20 @@ export const getUsers = (currentPage, pageSize) => async (dispatch) => {
     dispatch(togglePreloader(false))
     dispatch(setTotalUsers(response.data.totalCount));
     dispatch(setUsers(response.data.items))
+}
+
+export const getSearchUser = (user, pageSize) => async (dispatch) => {
+    dispatch(togglePreloader(true))
+    
+    let response = await userAPI.getSearchedUser(user, pageSize)
+    dispatch(togglePreloader(false))
+    if (response.data.totalCount > 0) {
+        dispatch(setUsers(response.data.items))
+        dispatch(setTotalUsers(response.data.totalCount));
+    }
+    else{
+        alert('No matches')
+    }
 }
 
 export const unfollow = (userId) => async (dispatch) => {

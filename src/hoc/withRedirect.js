@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
-
+//fix delete connect
 let mapStateToProps = (state) => {
     return {
         isAuth: state.auth.isAuth

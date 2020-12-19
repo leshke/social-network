@@ -50,16 +50,34 @@
     border-color: #fd5e3a;
 }
 
+/*=======SEARCH FORM=============*/
+
 .totalUsers {
     font-family: 'PoppinsMedium';
-    display: flex;
-    justify-content: flex-end;
+    float: right;
     padding: 1rem 1.75rem;
     color: #8c91b6;
 }
 
-.totalUsers span {
-    margin-right: 0.5rem;
+.searchWrapper {
+    color: #8c91b6;
+    float: left;
+    padding: 1rem 1.75rem;
+}
+
+.searchWrapper form {
+    display: flex;
+    align-items: center;
+}
+
+.searchWrapper input {
+    height: calc(2rem - 2px);
+    margin-left: .5rem;
+    padding: 0 .5rem;
+}
+
+.searchWrapper button {
+    background-color: #8c91b6;
 }
 
 /*=======PAGINATION=============*/

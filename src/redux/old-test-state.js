@@ -1,7 +1,6 @@
 import reducerMessages from "./reducer-messages";
 import reducerProfile from "./reducer-profile";
 
-
 // old test state without Redux
 const store = {
     _state: {

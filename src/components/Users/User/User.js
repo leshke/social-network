@@ -5,16 +5,9 @@ import { NavLink } from 'react-router-dom';
 
 const User = React.memo((props) => {
     return <>
-        {props.totalUsers ?
-            <div className={s.totalUsers}>
-                <span>Total users:</span>
-                {props.totalUsers}
-            </div> :
-            <div className={s.totalUsers}>
-                <span>All friends:</span>
-                {props.totalFriends}
-            </div>}
-
+        <div className={s.totalUsers}>
+            <span>Total: {props.totalUsers || props.totalFriends}</span>
+        </div>
         <div className={s.usersWrapper}>
             {
                 props.usersState.map((user) => {

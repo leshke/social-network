@@ -18,10 +18,12 @@ import Header from './components/Header/Header';
 
 const Messages = React.lazy(() => import('./components/Messages/Messages'));
 
-const App = React.memo(({ initializeApp, initialize }) => {
+const App = ({ initializeApp, initialize }) => {
+
+
   useEffect(() => {
     initializeApp()
-  })
+  },[])
 
   if (!initialize) return <Preloader />
 
@@ -30,7 +32,7 @@ const App = React.memo(({ initializeApp, initialize }) => {
     <Menu />
     <div className="content-wrapper">
       <Switch>
-        <Route exact path="/" render={() => <Redirect to='/profile' />} />
+        <Redirect exact from='/' to='/profile' />
         <Route path="/login" component={Login} />
         <Route path="/message" render={withSuspense(Messages)} />
         <Route path="/profile/:userId?" component={ProfileContainer} />
@@ -42,7 +44,7 @@ const App = React.memo(({ initializeApp, initialize }) => {
     </div>
     <Footer />
   </div>
-})
+}
 
 const MapStateToProps = (state) => ({
   initialize: state.app.initialized

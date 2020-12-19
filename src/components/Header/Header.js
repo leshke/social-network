@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import s from './Header.module.css';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
@@ -16,7 +16,9 @@ const Header = React.memo(() => {
     const avatar = useSelector(state => state.profilePage.avatar, shallowEqual)
     const isOwner = useSelector(state => state.auth.id, shallowEqual)
 
-    if (isAuth) dispatch(getProfileAvatar(isOwner))
+    useEffect(() => {
+        if (isAuth) dispatch(getProfileAvatar(isOwner))
+    }, [dispatch, isAuth, isOwner])
 
     const onLogout = useCallback(() => dispatch(logout()), [dispatch])
 

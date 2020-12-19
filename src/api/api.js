@@ -11,6 +11,7 @@ const instance = Axios.create({
 export const userAPI = {
     getUsersFromServer: (currentPage, pageSize) => instance.get(`users?page=${currentPage}&count=${pageSize}`),
     getFriendsFromServer: (currentPage, pageSize) => instance.get(`users?page=${currentPage}&count=${pageSize}&friend=${true}`),
+    getSearchedUser: (user,pageSize) => instance.get(`users?term=${user}&count=${pageSize}`),
     followUser: (userId) => instance.post(`follow/${userId}`),
     unfollowUser: (userId) => instance.delete(`follow/${userId}`),
 }

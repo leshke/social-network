@@ -2,12 +2,11 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { withAuthRedirect } from '../../hoc/withRedirect';
-import { unfollow, setCurrentPage } from '../../redux/reducer-users';
+import { unfollow, setCurrentPage, getSearchUser } from '../../redux/reducer-users';
 import { getFriends } from '../../redux/reducer-friends';
 import Friends from './Friends';
 
 const MyFriendsContainer = React.memo(({ currentPage, pageSize, getFriends, ...props }) => {
-
     useEffect(() => {
         getFriends(currentPage, pageSize)
     }, [getFriends, pageSize, currentPage])
@@ -37,6 +36,7 @@ export default compose(connect(mapStateToProps, {
     getFriends,
     unfollow,
     setCurrentPage,
+    getSearchUser
 }),
     withAuthRedirect
 )(MyFriendsContainer)

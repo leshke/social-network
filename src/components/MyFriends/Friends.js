@@ -18,7 +18,8 @@ const Friends = React.memo((props) => {
         <User usersState={props.friends}
             followingProgress={props.followingProgress}
             unfollow={props.unfollow}
-            totalFriends={props.totalFriends} />
+            totalFriends={props.totalFriends}
+            getSearchUser={props.getSearchUser} />
     </>
 })
 
