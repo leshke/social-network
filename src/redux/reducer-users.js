@@ -92,7 +92,6 @@ export const getUsers = (currentPage, pageSize) => async (dispatch) => {
 
 export const getSearchUser = (user, pageSize) => async (dispatch) => {
     dispatch(togglePreloader(true))
-    
     let response = await userAPI.getSearchedUser(user, pageSize)
     dispatch(togglePreloader(false))
     if (response.data.totalCount > 0) {
@@ -100,7 +99,7 @@ export const getSearchUser = (user, pageSize) => async (dispatch) => {
         dispatch(setTotalUsers(response.data.totalCount));
     }
     else{
-        alert('No matches')
+        dispatch(setTotalUsers(response.data.totalCount));
     }
 }
 

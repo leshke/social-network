@@ -12,21 +12,21 @@ let initialState = {
     posts: [
         {
             name: "WOOOOOW",
-            id: Math.floor(Math.random() * 100),
+            id: 1,
             liked: false,
             likes: 19,
             imageLink: "https://sun9-8.userapi.com/c851436/v851436928/21ab0/5HPqwAwypZA.jpg"
         },
         {
             name: "Put like if you know React and Redux",
-            id: Math.floor(Math.random() * 100),
+            id: 2,
             liked: true,
             likes: 11,
             imageLink: "https://www.thinktanker.io/wp-content/uploads/2020/09/redux.jpeg"
         },
         {
             name: "This is my first post",
-            id: Math.floor(Math.random() * 100),
+            id: 3,
             liked: false,
             likes: 14,
             imageLink: "https://miro.medium.com/max/4100/1*mf6hodU_tDPNYWSvVueVCw.jpeg"
@@ -45,7 +45,7 @@ const reducerProfile = (state = initialState, action) => {
                 name: action.post,
                 likes: 0,
                 imageLink: action.image,
-                id: Math.floor(Math.random() * 100)
+                id: state.posts.length + 1
             }
             return {
                 ...state,
