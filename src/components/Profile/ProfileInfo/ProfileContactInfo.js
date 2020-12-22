@@ -10,7 +10,6 @@ import LanguageIcon from '@material-ui/icons/Language';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 const ProfileContactInfo = ({ userProfile }) => {
-
     const switchIcon = (iconLogo) => {
         switch (iconLogo) {
             case 'facebook':

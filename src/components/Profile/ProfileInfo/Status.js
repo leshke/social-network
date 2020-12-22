@@ -1,51 +1,42 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import s from './ProfileInfo.module.css'
+import EditIcon from '@material-ui/icons/Edit';
 
-class ProfileStatus extends React.PureComponent {
-    state = {
-        editMode: false,
-        status: this.props.status
-    }
+const ProfileStatus = React.memo((props) => {
+    let [editMode, toggleEditMode] = useState(false)
+    let [status, changeStatus] = useState(props.status)
 
-    toggleEditMode = () => {
-        if (!this.state.editMode) {
-            this.setState({
-                editMode: true
-            })
+    useEffect(() => {
+        changeStatus(props.status)
+    }, [props.status])
+
+    const onToggleEditMode = () => {
+        if (!editMode) {
+            toggleEditMode(true)
         }
         else {
-            this.setState({
-                editMode: false
-            })
-            this.props.updateStatus(this.state.status)
+            toggleEditMode(false)
         }
+        props.updateStatus(status)
     }
 
-    onChangeStatus = (e) => {
-        this.setState({
-            status: e.currentTarget.value
-        })
+    const onChangeStatus = (e) => {
+        changeStatus(e.currentTarget.value)
     }
 
-    componentDidUpdate(prevProps, prevState) {
-        if (prevProps.status !== this.props.status) {
-            this.setState({
-                status: this.props.status
-            })
+    return <div className={s.wrapper}>
+        {
+            !editMode ?
+                <p >{props.status || 'no status :('}</p> :
+                <input onChange={onChangeStatus} onBlur={onToggleEditMode} maxLength="45" autoFocus={true} value={status || ''}></input>
         }
-    }
-
-    render() {
-        return <div className={s.status}>
-                {
-                    !this.state.editMode ?
-                        <span onClick={this.toggleEditMode}>{this.props.status || 'This user has not status'}</span> :
-                        <input onChange={this.onChangeStatus} autoFocus={true} onBlur={this.toggleEditMode} value={this.state.status || ''}></input>
-                }
-            </div>
-        )
-
-    }
-}
+        <div className={s.headerContainer}>
+            {!props.isOwner && !editMode ?
+                <button onClick={onToggleEditMode}>
+                    <span data-tooltip="Edit"><EditIcon fontSize='small' htmlColor="#66bfff" /></span>
+                </button> : null}
+        </div>
+    </div>
+})
 
 export default ProfileStatus

@@ -6,7 +6,6 @@ import { composeValidators, maxValueCalc } from '../../../validators/vaildators'
 import { Input, Textarea } from '../../common/FormControl/FormControl';
 
 const PostForm = (props) => {
-
     const onSubmit = (values, form) => {
         props.addPost(values.post, values.postImage);
         setTimeout(() => {
@@ -24,7 +23,6 @@ const PostForm = (props) => {
 }
 
 const MyPosts = React.memo((props) => {
-
     const postsElements = props.profileState.map(post => <Post loginName={props.loginName} key={post.id}
         avatarImg={props.avatarImg} name={post.name}
         id={post.id} liked={post.liked} like={post.likes}

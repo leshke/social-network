@@ -20,7 +20,11 @@ const SearchUser = React.memo(({ getSearchUser, pageSize, totalUsers }) => {
             <input value={value} onChange={handlerOnChange}></input>
             <button onClick={onSubmit}>search</button>
         </form>
-        {result ? <span>Matches found : {totalUsers ? totalUsers : 'Nothing to find'}</span> : ''}
+        {
+            result ?
+                totalUsers > 0 ? <span>Matches found : {totalUsers}</span> : <h4>User Not Found</h4>
+                    : null
+        }
     </div>
 })
 export default SearchUser;

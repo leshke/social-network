@@ -4,7 +4,6 @@ import s from './CurrentDialog.module.css'
 import avatar from '../../../assets/img/avatar.png'
 
 const AddNewMessageForm = (props) => {
-    
     const onSubmit = (values, form) => {
         props.sendMessage(values.message);
         setTimeout(() => {
@@ -24,7 +23,6 @@ const AddNewMessageForm = (props) => {
 }
 
 const CurrentDialog = (props) => {
-
     const messagesElements = props.messageState.messages
         .map((message, i) => <div className={s.message} key={i}>
             <img src={props.avatarImg || avatar} alt='ava' />

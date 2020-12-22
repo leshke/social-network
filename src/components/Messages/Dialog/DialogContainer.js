@@ -9,13 +9,7 @@ const MapStateToProps = (state) => {
     }
 }
 
-const MapDispatchToProps = () => {
-    return {
-
-    }
-}
-
 export default compose(
-    connect(MapStateToProps, MapDispatchToProps),
+    connect(MapStateToProps, null),
     withAuthRedirect //hoc for authorisation redirect to login
 )(Dialog)

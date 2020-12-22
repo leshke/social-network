@@ -3,7 +3,6 @@ import s from './Login.module.css'
 import classnames from 'classnames';
 
 const Circles = () => {
-  
     const makeClassName = (style) => {
       return classnames(s.circle, style)
     }

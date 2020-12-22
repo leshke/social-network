@@ -5,7 +5,7 @@ import Preloader from '../common/Preloader';
 import s from './Users.module.css';
 import SearchUser from './SearchUser';
 
-const Users = React.memo((props) => {
+const Users = (props) => {
     return <>
         <PaginationContainer totalUsers={props.totalUsers}
             pageSize={props.pageSize}
@@ -25,5 +25,5 @@ const Users = React.memo((props) => {
             unfollow={props.unfollow}
             getSearchUser={props.getSearchUser} />
     </>
-})
+}
 export default Users;

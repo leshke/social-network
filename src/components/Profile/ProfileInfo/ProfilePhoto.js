@@ -4,7 +4,6 @@ import avatar from '../../../assets/img/avatar.png';
 import SystemUpdateAltIcon from '@material-ui/icons/SystemUpdateAlt';
 
 const ProfilePhoto = (props) => {
-
     const handleSubmit = (e) => {
         if (e.target.files.length) {
             props.saveProfilePhoto(e.target.files[0])

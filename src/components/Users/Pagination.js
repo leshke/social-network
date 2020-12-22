@@ -3,7 +3,6 @@ import s from './Users.module.css';
 import Pagination from "react-js-pagination";
 
 const PaginationContainer = (props) => {
-
     const [activePage, setActivePage] = useState(props.currentPage)
 
     const handlePageChange = (pageNumber) => {

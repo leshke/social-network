@@ -5,7 +5,6 @@ import avatar from '../../../../assets/img/avatar.png';
 import { Lightbox } from "react-modal-image";
 
 class Post extends React.PureComponent {
-
     state = {
         open: false
     }

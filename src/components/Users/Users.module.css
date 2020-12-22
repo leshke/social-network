@@ -80,6 +80,11 @@
     background-color: #8c91b6;
 }
 
+.searchWrapper h4{
+    width: 100%;
+    margin-top: 2rem;
+}
+
 /*=======PAGINATION=============*/
 
 .paginationContainer {

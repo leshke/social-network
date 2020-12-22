@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import s from './ProfileInfo.module.css'
 import Preloader from '../../common/Preloader'
-import ProfileStatus from './StatusWithHook'
+import ProfileStatus from './Status'
 import ProfilePhoto from './ProfilePhoto';
 import ProfileContactInfo from './ProfileContactInfo';
 import ProfileContactForm from './ProfileContactForm';

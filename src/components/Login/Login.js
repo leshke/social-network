@@ -9,7 +9,6 @@ import Circles from './CirclesAnimation'
 import s from './Login.module.css'
 
 const Login = ({ login, isAuth, captcha, error }) => {
-
     const onSubmit = (formData) => {
         login(formData.email, formData.password, formData.rememberMe, formData.captcha)
     }

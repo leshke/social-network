@@ -20,10 +20,9 @@ const Messages = React.lazy(() => import('./components/Messages/Messages'));
 
 const App = ({ initializeApp, initialize }) => {
 
-
   useEffect(() => {
     initializeApp()
-  },[])
+  }, [initializeApp, initialize])
 
   if (!initialize) return <Preloader />
 

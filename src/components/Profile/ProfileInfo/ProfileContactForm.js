@@ -4,7 +4,6 @@ import { Form } from 'react-final-form'
 import { CreateField, Input, Textarea } from '../../common/FormControl/FormControl'
 
 const ProfileContactForm = ({ userProfile, toggleEditMode, saveProfileInfo, inputError }) => {
-
     const [errors, setError] = useState(inputError)
 
     useEffect(() => {
