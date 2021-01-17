@@ -9,7 +9,9 @@ For routing used react-router.
 All styles made with CSS Modules.
 
 UI organized with functional components(hooks, hocs) some components made with libraries, such for forms react-final-form,
-for pagination react-js-pagination, for icons material-ui. All released features are in the tab ‘About’ inside the application.
+for pagination react-js-pagination, for icons material-ui.
+
+All released features are in the tab ‘About’ inside the application.
 
 ### Technologies
 
